@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html class="mdc-typography">
+
+<head>
+    <title>omg-img: Get Free Icons by Writing a URL</title>
+
+    <!--inject:css -->
+    <link rel="stylesheet" href="styles/styles.min.css">
+    <!-- endinject -->
+
+
+    <style>
+        body {
+            line-height: 1.75em;
+            background-color: #1B1B1B;
+            color: #CECECE;
+        }
+
+        .logo-main {
+            width: 150px;
+            padding-bottom: 50px;
+        }
+
+        .img-splash {
+            padding-top: 40px;
+            padding-bottom: 10px;
+            width: 100%;
+        }
+
+        .icon-card {
+            display: inline-block;
+            margin: 15px 0;
+        }
+
+        .mdc-card__primary.code-sample {
+            font-family: "Courier";
+            background-color: #3E3E3E;
+            color: #F1F1F1;
+            padding-bottom: 16px;
+            text-align: center;
+            overflow-x: scroll;
+            white-space: nowrap;
+        }
+
+        .code-sample a {
+            text-decoration: none;
+            color: #F5AC72;
+        }
+
+            .code-sample a:hover {
+                text-decoration: underline;
+            }
+
+
+        ul.list-options {
+            color: gray;
+        }
+
+        ul.usage-examples {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .icon-image {
+            margin: auto;
+        }
+
+        .icon-preview {
+            background-color: #f3f3f3;
+        }
+
+        a {
+            background-color: black !important;
+        }
+    </style>
+</head>
+
+<body class="mdc-typography">
+
+    <!--<div class="header-image"><span class="image-label">Courtesy of <a href="https://dribbble.com/shots/3422216-Disco-Nate">Jonny Mowat</a></span></div>-->
+
+
+    <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3 title-desc-block layout-grid__cell--span-1-tablet layout-grid__cell--span-0-phone"></div>
+
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 title-desc-block">
+
+            <img src="images/omg-img-logo-green.svg" alt="omg-img logo" class="logo-main" />
+
+            <h2 class="mdc-typography--adjust-margin mdc-typography--headline demo-theme--custom-dark-bg mdc-typography">
+                Insert any of our icons directly into your HTML just by writing the code. Hosted by a production-scale CDN. Linkware:
+                <a href="https://icons8.com/license">link</a> or <a href="https://icons8.com/buy">buy</a>.
+            </h2>
+
+            <h2 class="mdc-typography--display1">Usage</h2>
+
+            <p>Insert the &lt;img&gt; tag directly into your HTML. Icons8 will find the matching icon and generate it in the right style, size, and color.</p>
+
+
+            <div class="mdc-card icon-card">
+                <section class="mdc-card__primary code-sample">
+                    <span class="code-line">
+                        &lt;img src="<a href="https://img.icons8.com/search">https://img.icons8.com/search</a>"&gt;
+                    </span>
+                </section>
+                <section class="mdc-card__media icon-preview">
+                    <img src="https://maxcdn.icons8.com/iOS7/PNG/100/Very_Basic/search-100.png" width="50" class="icon-image">
+                </section>
+            </div>
+
+            <p>
+                It finds <a href="https://icons8.com/web-app/131/search">search icon</a> in our <a href="https://icons8.com/i">most popular style</a> with the default resolution for this style (50px) and black color.
+            </p>
+            <p>
+                For the icon names consists of two words and more, use - or _ to separate. For example: <span style="display:inline-block">left&dash;arrow</span>.
+            </p>
+            <p>
+                To see what we have, try searching our <a href="https://icons8.com/web-app">web app</a> or <a href="https://icons8.com/app">download</a> our apps for Mac and Windows — it's free, handy, and works offline.
+            </p>
+
+            <h2 class="mdc-typography--display1">Color</h2>
+
+
+            <div class="mdc-card icon-card">
+                <section class="mdc-card__primary code-sample">
+                    <span class="code-line">
+                        &lt;img src="<a href="https://img.icons8.com/search/2266EE">https://img.icons8.com/search/2266EE</a>"&gt;
+                    </span>
+                </section>
+                <section class="mdc-card__media icon-preview">
+                    <!-- Search icon by Icons8 -->
+                    <img class="icon icons8-Search" src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjAiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0iIzIyNjZFRSIgPiAgICA8cGF0aCBzdHlsZT0idGV4dC1pbmRlbnQ6MDt0ZXh0LWFsaWduOnN0YXJ0O2xpbmUtaGVpZ2h0Om5vcm1hbDt0ZXh0LXRyYW5zZm9ybTpub25lO2Jsb2NrLXByb2dyZXNzaW9uOnRiOy1pbmtzY2FwZS1mb250LXNwZWNpZmljYXRpb246Qml0c3RyZWFtIFZlcmEgU2FucyIgZD0iTSAyMSAzIEMgMTEuNjIzMDA0IDMgNCAxMC42MjMwMDQgNCAyMCBDIDQgMjkuMzc2OTk2IDExLjYyMzAwNCAzNyAyMSAzNyBDIDI0LjcwOTUwNSAzNyAyOC4xNDAzMjkgMzUuODAzODQ5IDMwLjkzNzUgMzMuNzgxMjUgTCA0NC4wOTM3NSA0Ni45MDYyNSBMIDQ2LjkwNjI1IDQ0LjA5Mzc1IEwgMzMuOTA2MjUgMzEuMDYyNSBDIDM2LjQ2MDU1NiAyOC4wODc1NjEgMzggMjQuMjIxMzEzIDM4IDIwIEMgMzggMTAuNjIzMDA0IDMwLjM3Njk5NiAzIDIxIDMgeiBNIDIxIDUgQyAyOS4yOTYxMTYgNSAzNiAxMS43MDM4ODQgMzYgMjAgQyAzNiAyOC4yOTYxMTYgMjkuMjk2MTE2IDM1IDIxIDM1IEMgMTIuNzAzODg0IDM1IDYgMjguMjk2MTE2IDYgMjAgQyA2IDExLjcwMzg4NCAxMi43MDM4ODQgNSAyMSA1IHoiIGNvbG9yPSIjMDAwIiBvdmVyZmxvdz0idmlzaWJsZSIgZW5hYmxlLWJhY2tncm91bmQ9ImFjY3VtdWxhdGUiIGZvbnQtZmFtaWx5PSJCaXRzdHJlYW0gVmVyYSBTYW5zIj48L3BhdGg+PC9zdmc+' />
+                </section>
+            </div>
+
+
+            <p>
+                Icon recolored to #2266EE. <a href="https://icons8.com/web-app/new-icons/color">Color icons</a> cannot be recolored.
+            </p>
+
+            <h2 class="mdc-typography--display1">Style</h2>
+
+
+            <div class="mdc-card icon-card">
+                <section class="mdc-card__primary code-sample">
+                    <span class="code-line">
+                        &lt;img src="<a href="https://img.icons8.com/search">https://img.icons8.com/color/search</a>"&gt;
+                    </span>
+                </section>
+                <section class="mdc-card__media icon-preview">
+                    <!-- Search icon by Icons8 -->
+                    <img class="icon icons8-Search icon-image" src="data:image/png;base64,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" width="48" height="48">
+                </section>
+            </div>
+
+
+            <p>
+                Search icon in <a href="https://icons8.com/web-app/for/win10/windows">Windows 10 style</a>. Other styles are:
+            </p>
+
+            <ul class="list-options">
+                <li><a href="https://icons8.com/web-app/new-icons/ios7">ios</a></li>
+                <li><a href="https://icons8.com/web-app/new-icons/win10">win</a></li>
+                <li><a href="https://icons8.com/web-app/new-icons/win8">win8</a></li>
+                <li><a href="https://icons8.com/web-app/new-icons/androidL">material</a></li>
+                <li><a href="https://icons8.com/web-app/new-icons/android">android</a></li>
+                <li><a href="https://icons8.com/web-app/new-icons/color">color</a></li>
+                <li><a href="https://icons8.com/web-app/new-icons/office">office</a></li>
+                <li><a href="https://icons8.com/web-app/new-icons/ultraviolet">ultraviolet</a></li>
+                <li><a href="https://icons8.com/web-app/new-icons/dotty">dotty</a></li>
+                <li><a href="https://icons8.com/web-app/new-icons/nolan">nolan</a></li>
+                <li><a href="https://icons8.com/web-app/new-icons/Dusk">dusk</a></li>
+            </ul>
+
+            <p>
+                Check all the styles in our <a href="https://icons8.com/web-app">web app</a>.
+            </p>
+
+            <h2 class="mdc-typography--display1">Size</h2>
+
+            <div class="mdc-card icon-card">
+                <section class="mdc-card__primary code-sample">
+                    <span class="code-line">
+                        &lt;img src="<a href="https://img.icons8.com/search/96">https://img.icons8.com/color/search/96</a>"&gt;
+                    </span>
+                </section>
+                <section class="mdc-card__media icon-preview">
+                    <!-- Search icon by Icons8 -->
+                    <img class="icon icons8-Search icon-image" src="data:image/png;base64,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" width="96" height="96">
+                </section>
+            </div>
+
+            <p>
+                Icon resized to 96x96px. Choose any value up to 512. Each style has the size it's designed for, also called <em> pixel perfect</em> size:
+            </p>
+            <ul class="list-options">
+                <li>iOS: 50x50</li>
+                <li>Windows 8: 26x26</li>
+                <li>Windows 10: 32x32</li>
+                <li>Android 4: 24x24</li>
+                <li>Android 5: 24x24</li>
+                <li>Color: 48x48</li>
+                <li>Office: 16x16, 30x30, 40x40, 80x80</li>
+            </ul>
+
+            <p>
+                When possible, use multiplies of the pixel perfect style. For example, for iOS, use 50x50, 100x100, 150x150, etc.
+            </p>
+
+            <h2 class="mdc-typography--display1">License</h2>
+            <p>
+                Icons are created by <a href="https://icons8.com/web-app">Icons8</a>. Please either <a href="https://icons8.com/license">link</a>            or <a href="https://icons8.com/buy">buy</a>.
+            </p>
+
+            <h2 class="mdc-typography--display1">Credits</h2>
+            <ul class="list-options">
+                <li>
+                    Inspired by Brent Jackson's <a href="https://icon.now.sh/">microicon</a>. Brent, your idea is awesome.
+                </li>
+                <li>
+                    Accelerated by <a href="https://www.keycdn.com/">KeyCDN</a> and the great people working there.
+                </li>
+                <li>
+                    We compress PNGs with <a href="https://imageoptim.com/api">ImageOptim API</a>. If you use <a href="https://imageoptim.com/">ImageOptim for Mac</a>, you know it <a href="http://jamiemason.github.io/ImageOptim-CLI/comparison/png/imageoptim/asc/">squeezes out</a> more bytes than anything else.
+                </li>
+            </ul>
+
+
+            <h2 class="mdc-typography--display1">Help us</h2>
+            <ul class="list-options">
+                <li>
+                    <a href="https://icons8.com/contact">Become</a> our sponsor
+                    for Linux or Windows servers
+                </li>
+                <li>Write a plugin for your IDE (we'll provide the <a href="http://docs.icons8.apiary.io/">API</a>)</li>
+                <li>Write a plugin for webpack and gulp to download the inserted icons and store them locally</li>
+                <li>Helping other developers? Use <em>omg! &lt;img&gt;</em> in your codepens, Stack Overflow answers, and tutorials</li>
+                <li>Teaching? Show it <em>omg! &lt;img&gt;</em> in your course and save your students a few months of life</li>
+                <li><a href="https://icons8.com/buy">Buy</a> our paid license.</li>
+            </ul>
+
+            <img src="images/icons-cdn-splash.svg" alt="Splash: insert icons right from your IDE" class="img-splash" />
+            
+            <h2 class="mdc-typography--display1">More Free Stuff</h2>
+
+            <ul class="list-options">
+                <li><a href="https://icons8.com/app">Download</a> all 70,000 icons for offline use</li>
+                <li><a href="https://icons8.com/line-awesome">Line Awesome</a> - like Font Awesome, but in outline style</li>
+            </ul>
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
